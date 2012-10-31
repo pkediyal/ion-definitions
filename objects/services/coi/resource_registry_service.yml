@@ -126,9 +126,10 @@ methods:
 
   read_attachment:
     docstring: |
-      Reads an attachment by id.
+      Reads an attachment by id, excludes content unless indicated otherwise.
     in:
       attachment_id: ""
+      include_content: False
     out:
       attachment: !Attachment
     throws:
